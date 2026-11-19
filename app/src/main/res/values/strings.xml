@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WeatherNowDemo</string>
+    <string name="search_hint">Search for a city...</string>
+    <string name="popular_cities">Popular Cities</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="app_information">App Information</string>
+    <string name="app_version">WeatherNow Version %1$s</string>
+    <string name="support_information">Support &amp; Information</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="view_github">View on GitHub</string>
+    <string name="share_app">Share App</string>
+</resources>
