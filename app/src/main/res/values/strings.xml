@@ -3,7 +3,6 @@
     <string name="app_name">WeatherNowDemo</string>
     <string name="search_hint">Search for a city...</string>
     <string name="popular_cities">Popular Cities</string>
-
     <!-- Settings -->
     <string name="settings_title">Settings</string>
     <string name="app_information">App Information</string>

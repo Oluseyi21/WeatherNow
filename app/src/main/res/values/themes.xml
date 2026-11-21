@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Base application theme -->
     <style name="Base.Theme.WeatherNow"
         parent="Theme.Material3.DayNight.NoActionBar">
-
         <item name="colorPrimary">@color/wn_primary</item>
         <item name="colorOnPrimary">@color/wn_surface</item>
-
         <item name="colorSecondary">@color/wn_secondary</item>
         <item name="colorSecondaryContainer">@color/wn_secondary</item>
-
         <item name="colorSurface">@color/wn_surface</item>
         <item name="android:colorBackground">@color/wn_background</item>
         <item name="colorOnSurface">@color/wn_text_primary</item>
-
         <item name="textAppearanceHeadlineMedium">@style/TextAppearance.WeatherNow.Headline</item>
         <item name="textAppearanceBodyMedium">@style/TextAppearance.WeatherNow.Body</item>
-
     </style>
 
     <style name="Theme.WeatherNow"
@@ -43,7 +37,5 @@
         <item name="android:statusBarColor">@color/wn_navy</item>
         <item name="android:navigationBarColor">@color/wn_navy</item>
         <item name="android:windowLightStatusBar">false</item>
-
     </style>
-
 </resources>

@@ -16,32 +16,25 @@ import com.example.weathernow.BuildConfig;
 import com.example.weathernow.databinding.FragmentSettingsBinding;
 
 public class SettingsFragment extends Fragment {
-
     private FragmentSettingsBinding binding;
-
     @Nullable
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater,
             @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-
         binding = FragmentSettingsBinding.inflate(inflater, container, false);
-
         binding.appVersion.setText(
                 getString(R.string.app_version, BuildConfig.VERSION_NAME)
         );
-
         // Send Feedback
         binding.feedbackButton.setOnClickListener(view -> {
-
             Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
             emailIntent.setData(Uri.parse("mailto:support@weathernow.com"));
             emailIntent.putExtra(
                     Intent.EXTRA_SUBJECT,
                     "WeatherNow App Feedback"
             );
-
             try {
                 startActivity(emailIntent);
             } catch (ActivityNotFoundException e) {
@@ -60,7 +53,6 @@ public class SettingsFragment extends Fragment {
                     Intent.ACTION_VIEW,
                     Uri.parse("https://github.com/Oluseyi21/WeatherNow.git")
             );
-
             try {
                 startActivity(websiteIntent);
             } catch (ActivityNotFoundException e) {
@@ -71,9 +63,9 @@ public class SettingsFragment extends Fragment {
                 ).show();
             }
         });
+
         // Share App
         binding.shareButton.setOnClickListener(view -> {
-
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
             shareIntent.setType("text/plain");
             shareIntent.putExtra(
